@@ -1,0 +1,14 @@
+# Suryansh Mishra · Art
+
+> The art portfolio and shop of Suryansh Mishra: ballpoint pen hyper-realistic portraits, pencil and marker illustration and manga-inspired concept art, with limited edition prints and portrait and concept art commissions.
+
+Suryansh Mishra is an AI engineer from Noida, India. He is the co-founder and CTO of Alethman and a forward deployed engineer at InboxKit. He also paints and writes poetry. This site, art.suryanshmishra.com, is where his artwork lives.
+
+## This site
+- [Art portfolio and shop](https://art.suryanshmishra.com/): selected works, about the artist, prints and commissions, contact
+
+## Suryansh Mishra elsewhere
+- [suryanshmishra.com](https://suryanshmishra.com/): his home, an open world that leads to each of his sites
+- [About Suryansh Mishra](https://suryanshmishra.com/about/): who he is, in plain text
+- [Coding portfolio](https://code.suryanshmishra.com/): his engineering work
+- [Bonfire](https://bonfire.suryanshmishra.com/): his blog of poems and thoughts
