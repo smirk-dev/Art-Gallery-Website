@@ -1589,7 +1589,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://source.unsplash.com/random/600x800/?artist,studio" alt="Suryansh Mishra in his studio">
+                    <img src="portrait.jpg" alt="Pencil portrait drawing by Suryansh Mishra" loading="lazy">
                 </div>
             </div>
         </div>
@@ -1756,18 +1756,10 @@
                     </div>
                     
                     <div class="contact-method">
-                        <div class="contact-icon">📱</div>
+                        <div class="contact-icon">🔗</div>
                         <div class="contact-details">
-                            <h4>Phone</h4>
-                            <a href="tel:+1234567890">+91 93121 57264</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <h4>Studio</h4>
-                            <p>Jaypee Kosmos<br>Noida, Uttar Pradesh- 201304</p>
+                            <h4>All Links</h4>
+                            <a href="https://linktr.ee/mishrasuryansh" target="_blank" rel="noopener">linktr.ee/mishrasuryansh</a>
                         </div>
                     </div>
                     
@@ -1881,7 +1873,8 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Suryansh Mishra. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year">2026</span> Suryansh Mishra. All rights reserved.</p>
+            <script>document.getElementById('copyright-year').textContent = Math.max(2026, new Date().getFullYear());</script>
         </div>
     </footer>
 
@@ -2013,8 +2006,18 @@
             document.getElementById('modal-year').textContent = year;
             document.getElementById('modal-medium').textContent = medium;
             
-            // Set a placeholder image (in a real site, you'd use the actual project image)
-            document.getElementById('modal-image').src = `https://source.unsplash.com/random/800x600/?art,${title.toLowerCase().replace(' ', ',')}`;
+            // Show the clicked artwork's own image in the modal
+            const modalImage = document.getElementById('modal-image');
+            const item = window.event && window.event.currentTarget;
+            const thumb = item && item.querySelector ? item.querySelector('img') : null;
+            const src = thumb ? thumb.getAttribute('src') : '';
+            if (src && src !== 'rapevictim.jpg') {
+                modalImage.src = src;
+                modalImage.style.display = '';
+            } else {
+                modalImage.removeAttribute('src');
+                modalImage.style.display = 'none';
+            }
             
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden';
